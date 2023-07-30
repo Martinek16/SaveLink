@@ -13,9 +13,6 @@ My Awesome Browser Extension is a simple browser extension for Chrome and Firefo
 - Custom Title: Users can add custom titles to the saved web pages, making it easier to identify the pages later.
 - Favicon Display: The saved links page displays favicons of the saved web pages along with their titles for better recognition.
 
-## Screenshots
-
-[Insert Screenshots Here]
 
 ## How to Use
 
