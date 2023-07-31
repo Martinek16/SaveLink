@@ -1,17 +1,15 @@
-# My Awesome Browser Extension
+# SaveLink
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
 
-My Awesome Browser Extension is a simple browser extension for Chrome and Firefox that allows users to save and manage web pages they find interesting. With this extension, users can store URLs and custom titles for the web pages they want to revisit later.
+SaveLink is a simple browser extension for Chrome and Firefox that allows users to save and manage web pages they find interesting. With this extension, users can store URLs and custom titles for the web pages they want to revisit later.
 
 ## Features
 
 - Save current page: Click the "Save Page" button to save the URL and custom title of the currently open web page.
 - View saved links: Click the "Open Saved Links" button to open a new page displaying all the saved links with their corresponding favicons.
-- Custom Title: Users can add custom titles to the saved web pages, making it easier to identify the pages later.
-- Favicon Display: The saved links page displays favicons of the saved web pages along with their titles for better recognition.
 
 
 ## How to Use
