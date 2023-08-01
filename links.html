@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SaveLink</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+    <div id="linksContainer">
+    </div>
+    <script src="links.js"></script>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <h2>Edit</h2>
+            <hr>
+
+            <h3>Edit Title:</h3>
+            <input type="text" id="modalTitle" placeholder="Title">
+
+            <h3>Edit Link:</h3>
+            <input type="text" id="modalUrl" placeholder="Url">
+
+            <!-- Buttons added to the bottom right corner -->
+            <div class="button-container">
+                <button id="modalSave">Update</button>
+                <button id="modalDelete">Delete</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

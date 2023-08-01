@@ -1,36 +1,121 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .container {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #message {
-    margin-top: 10px;
-  }
-  
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left;
+  position: relative;
+}
+
+.card-content {
+  width: 100%;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 80%;
+}
+
+.card i {
+  margin-left: 10px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.card:hover i {
+  display: inline-block;
+}
+
+#linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-column {
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 800px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.modal-buttons button {
+  margin-left: 5px;
+}
+
+input[type="text"] {
+  width: 650px;
+}
+
+/* Add this to your styles.css file */
+.modal-content {
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.button-container button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+.button-container button:focus {
+  outline: none;
+}
