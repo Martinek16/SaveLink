@@ -9,9 +9,22 @@
 </head>
 
 <body>
+    <a id="top"></a>
+
+    <nav class="navbar">
+        <a href="#top" class="navbar-title">SaveLink</a>
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+    
     <div id="linksContainer">
     </div>
     <script src="links.js"></script>
+
+
     <div class="modal" id="myModal">
         <div class="modal-content">
             <h2>Edit</h2>
@@ -23,7 +36,7 @@
             <h3>Edit Link:</h3>
             <input type="text" id="modalUrl" placeholder="Url">
 
-            <!-- Buttons added to the bottom right corner -->
+            <!-- Buttons on card -->
             <div class="button-container">
                 <button id="modalSave">Update</button>
                 <button id="modalDelete">Delete</button>
@@ -31,6 +44,14 @@
 
         </div>
     </div>
+
+    <button class="settings-btn" onclick="openSettingsModal()"><i class="fas fa-cog"></i></button>
+
+    <script>
+        function openSettingsModal() {
+            // Your function implementation for opening the settings modal.
+        }
+    </script>
 </body>
 
 </html>
