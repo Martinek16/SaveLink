@@ -13,36 +13,19 @@
 
     <nav class="navbar">
         <a href="#top" class="navbar-title">SaveLink</a>
-        <!-- Search bar -->
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button><i class="fas fa-search"></i></button>
-        </div>
     </nav>
     
-    <div id="linksContainer">
+    <div id="linksContainer" class="category-container">
+        <div class="category">Category 1</div>
+        <div class="category">Category 2</div>
+        <div class="category">Category 3</div>
+        <!-- Add more categories here -->
     </div>
+
     <script src="links.js"></script>
 
-
     <div class="modal" id="myModal">
-        <div class="modal-content">
-            <h2>Edit</h2>
-            <hr>
-
-            <h3>Edit Title:</h3>
-            <input type="text" id="modalTitle" placeholder="Title">
-
-            <h3>Edit Link:</h3>
-            <input type="text" id="modalUrl" placeholder="Url">
-
-            <!-- Buttons on card -->
-            <div class="button-container">
-                <button id="modalSave">Update</button>
-                <button id="modalDelete">Delete</button>
-            </div>
-
-        </div>
+        <!-- Your modal content -->
     </div>
 
     <button class="settings-btn" onclick="openSettingsModal()"><i class="fas fa-cog"></i></button>

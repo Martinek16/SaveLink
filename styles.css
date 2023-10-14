@@ -1,3 +1,207 @@
+/* Popup container styling */
+.popup-container {
+  width: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+/* First section styling */
+.first-section {
+  display: flex;
+  align-items: center;
+  margin: 1px 0;
+}
+
+/* Circle styling */
+.circle {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right, #0073e6, #00c3e6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* Move the SaveLink text to the right of the circle */
+.save-link {
+  font-size: 18px;
+  font-weight: bold;
+  flex: 1;
+}
+
+/* Add a folder button */
+.folder-btn {
+  background: none;
+  border: none;
+  color: #0073e6;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Adjust the folder icon size */
+.folder-btn i {
+  font-size: 24px;
+}
+
+/* Categories styling */
+.categories {
+  text-align: center;
+  background-color: #d9d9d9;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 0;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 14px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+/* Text styling */
+.text {
+  text-align: center;
+  background-color: #d9d9d9;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 0;
+  font-size: 12px;
+  width: 100%;
+}
+
+/* Save section styling */
+.save-section {
+  text-align: center;
+  width: 100%;
+}
+
+.save-btn {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the buttons inside the modal */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button#modalSave {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+button#modalDelete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Style the settings button */
+.settings-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .card {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -36,183 +240,18 @@
 .card:hover i {
   display: inline-block;
 }
+/* Add your existing CSS styles here */
 
-#linksContainer {
-  padding-top: 50px;
+.category-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.category-column {
-  flex: 1;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.modal-content {
-  background-color: #fff;
+.category {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
   border-radius: 5px;
-  padding: 20px;
-  max-width: 800px;
-  max-height: 400px;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal-buttons {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.modal-buttons button {
-  margin-left: 5px;
-}
-
-input[type="text"] {
-  width: 650px;
-}
-
-/* Add this to your styles.css file */
-.modal-content {
-  position: relative;
-}
-
-.button-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-}
-
-.button-container button {
-  padding: 8px 16px;
-  margin-left: 8px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.button-container button:hover {
-  background-color: #45a049;
-}
-
-.button-container button:focus {
-  outline: none;
-}
-
-.settings-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: #45a049; /* You can change the color as desired */
-  border-radius: 50%;
-  color: white;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.settings-btn:hover {
-  background-color: #45a049; /* You can change the hover color as desired */
-}
-
-body {
-  margin: 0;
-}
-
-.navbar {
-  background-color: #45a049;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  color: white;
-  position: fixed; /* Set the navbar's position to fixed */
-  top: 0; /* Position the navbar at the top of the screen */
-  left: 0; /* Align the navbar to the left edge */
-  right: 0; /* Extend the navbar to the right edge */
-  z-index: 1000; /* Set a high z-index to ensure it's above other elements */
-}
-
-.navbar-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.settings-menu {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 8px;
-  z-index: 1;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.navbar-title {
-  color: #f9f9f9; /* Default color */
-  text-decoration: none; /* Remove underline */
-}
-
-.navbar-title:hover {
-  color: #f9f9f9; /* Color on hover */
-}
-
-.navbar-title:active {
-  color: #f9f9f9; /* Color on active/clicked state */
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.search-bar input[type="text"] {
-  background-color: transparent;
-  color: black;
-  border: none;
-  padding: 5px;
-  width: 200px;
-}
-
-.search-bar button {
-  border: none;
-  background-color: transparent;
-  color: #45a049;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.search-bar button i {
-  font-size: 18px;
+  flex: 1; /* Distribute categories evenly in columns */
 }
