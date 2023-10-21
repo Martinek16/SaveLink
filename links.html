@@ -5,35 +5,130 @@
     <title>SaveLink</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
 </head>
 
 <body>
     <a id="top"></a>
-
     <nav class="navbar">
         <a href="#top" class="navbar-title">SaveLink</a>
     </nav>
-    
     <div id="linksContainer" class="category-container">
-        <div class="category">Category 1</div>
-        <div class="category">Category 2</div>
-        <div class="category">Category 3</div>
+        <div class="category" id="category1">Category 1</div>
+        <div class="category" id="category2">Category 2</div>
+        <div class="category" id="category3">Category 3</div>
         <!-- Add more categories here -->
     </div>
-
     <script src="links.js"></script>
-
     <div class="modal" id="myModal">
-        <!-- Your modal content -->
+        <div class="modal-content">
+            <h2>Edit</h2>
+            <hr>
+            <h3>Edit Title:</h3>
+            <input type="text" id="modalTitle" placeholder="Title">
+            <h3>Edit Link:</h3>
+            <input type="text" id="modalUrl" placeholder="Url">
+            <!-- Buttons on card -->
+            <div class="button-container">
+                <button id="modalSave">Update</button>
+                <button id="modalDelete">Delete</button>
+            </div>
+        </div>
     </div>
-
-    <button class="settings-btn" onclick="openSettingsModal()"><i class="fas fa-cog"></i></button>
-
+    <button class="settings-btn" onclick="openSettingsModal()">
+        <i class="fas fa-cog"></i>
+    </button>    
+    <!-- Modal for settings -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <h2>Settings</h2>
+            <hr>
+            <!-- Add your settings content here -->
+            <label for="setting1">Setting 1:</label>
+            <input type="text" id="setting1" placeholder="Setting 1">
+            <label for="setting2">Setting 2:</label>
+            <input type="text" id="setting2" placeholder="Setting 2">
+            <!-- Add buttons to save settings or close the modal -->
+            <div class="button-container">
+                <button id="saveSettings">Save</button>
+                <button id="closeSettings" onclick="closeSettingsModal()">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- Add the JavaScript code to open the settings modal -->
     <script>
         function openSettingsModal() {
-            // Your function implementation for opening the settings modal.
+            var settingsModal = document.getElementById("settingsModal");
+            settingsModal.style.display = "flex";
         }
+
+        // Open the modal and populate the fields with the clicked card's data
+        function openEditModal(title, url) {
+            var modal = document.getElementById("myModal");
+            var modalTitleInput = document.getElementById("modalTitle");
+            var modalUrlInput = document.getElementById("modalUrl");
+
+            modalTitleInput.value = title;
+            modalUrlInput.value = url;
+            modal.style.display = "flex";
+        }
+
+        // Handle the "Update" button click
+        document.getElementById("modalSave").addEventListener("click", function () {
+            var modalTitleInput = document.getElementById("modalTitle");
+            var modalUrlInput = document.getElementById("modalUrl");
+
+            var savedPages = JSON.parse(localStorage.getItem("savedPages")) || [];
+            var cardTitle = modalTitleInput.value;
+
+            // Find the index of the saved link based on its title
+            var index = savedPages.findIndex(function (page) {
+                return page.title === cardTitle;
+            });
+
+            if (index !== -1) {
+                // Update the saved link with the new title and URL
+                savedPages[index].title = modalTitleInput.value;
+                savedPages[index].url = modalUrlInput.value;
+
+                // Save the updated data to local storage
+                localStorage.setItem("savedPages", JSON.stringify(savedPages));
+
+                // Refresh the links display
+                showSavedLinks();
+            }
+
+            // Close the modal
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        });
+
+        // Handle the "Delete" button click
+        document.getElementById("modalDelete").addEventListener("click", function () {
+            var modalTitleInput = document.getElementById("modalTitle");
+
+            var savedPages = JSON.parse(localStorage.getItem("savedPages")) || [];
+            var cardTitle = modalTitleInput.value;
+
+            // Find the index of the saved link based on its title
+            var index = savedPages.findIndex(function (page) {
+                return page.title === cardTitle;
+            });
+
+            if (index !== -1) {
+                // Remove the saved link
+                savedPages.splice(index, 1);
+
+                // Save the updated data to local storage
+                localStorage.setItem("savedPages", JSON.stringify(savedPages));
+
+                // Refresh the links display
+                showSavedLinks();
+            }
+
+            // Close the modal
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        });
     </script>
 </body>
 

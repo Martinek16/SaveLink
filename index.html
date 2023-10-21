@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Save Links</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="popup-container">
-      <div class="first-section">
-        <div id="openLinksBtn" class="circle">
-          <i class="fa fa-link"></i>
-        </div>
-        <h2 class="save-link">SaveLink</h2>
-      </div>
-      <label class="cat">Categories:</label>
-      <div class="section categories">
-        <label>
-          <input type="checkbox" class="checkbox" name="categoryCheckbox" value="Fun">
-          <span class="checkbox-label">Fun</span>
-        </label>
-        <label>
-          <input type="checkbox" class="checkbox" name="categoryCheckbox" value="Work">
-          <span class="checkbox-label">Work</span>
-        </label>
-        <label>
-          <input type="checkbox" class="checkbox" name="categoryCheckbox" value="Other">
-          <span class="checkbox-label">Other</span>
-        </label>
-      </div>
-      <div class="section text">
-        <p>Additional Text</p>
-      </div>
-      <div class="section save-section">
-        <button class="save-btn" id="savePageBtn">Save</button>
-      </div>
-      <div class="section message">
-        <p id="message"></p>
-      </div>
-    </div>
 
-    <!-- Move the script reference to the end of the body -->
-    <script src="script.js"></script>
-  </body>
+<head>
+  <title>Save Links</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="popup-container">
+    <div class="first-section">
+      <div id="openLinksBtn" class="circle">
+        <i class="fa fa-link"></i>
+      </div>
+      <h2 class="save-link">SaveLink</h2>
+    </div>
+    <label class="cat">Categories:</label>
+    <div class="section categories">
+      <label>
+        <input type="checkbox" class="checkbox" name="categoryCheckbox" value="Fun">
+        <span class="checkbox-label">Fun</span>
+      </label>
+      <label>
+        <input type="checkbox" class="checkbox" name="categoryCheckbox" value="Work">
+        <span class="checkbox-label">Work</span>
+      </label>
+      <label>
+        <input type="checkbox" class="checkbox" name="categoryCheckbox" value="Other">
+        <span class="checkbox-label">Other</span>
+      </label>
+    </div>
+    <div class="section save-section">
+      <button class="save-btn" id="savePageBtn">Save</button>
+    </div>
+    <div class="section message">
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <!-- Move the script reference to the end of the body -->
+  <script src="script.js"></script>
+</body>
+
 </html>
