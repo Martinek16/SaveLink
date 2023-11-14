@@ -339,7 +339,6 @@ input:checked + .slider:before {
 transform: translateX(26px);
 }
 
-/* Oblikovanje za zaokrožen slider */
 .slider.round {
 border-radius: 34px;
 }
@@ -357,4 +356,11 @@ border-radius: 50%;
 
 .category-column h2 {
   margin-top: 0;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
