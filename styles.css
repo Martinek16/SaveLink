@@ -108,7 +108,8 @@ label {
 }
 
 /* Reset some default styles */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -240,6 +241,7 @@ button#modalDelete {
 .card:hover i {
   display: inline-block;
 }
+
 /* Add your existing CSS styles here */
 
 .category-container {
@@ -253,7 +255,8 @@ button#modalDelete {
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
-  flex: 1; /* Distribute categories evenly in columns */
+  flex: 1;
+  /* Distribute categories evenly in columns */
 }
 
 .modal-content {
@@ -262,13 +265,15 @@ button#modalDelete {
   /* Ostali stilski pravilniki za .modal-content (če obstajajo) */
 }
 
-#modalTitle, #modalUrl {
+#modalTitle,
+#modalUrl {
   width: 100%;
   /* Dodatni stilski pravilniki za #modalTitle in #modalUrl (če obstajajo) */
 }
 
 .modal {
-  display: none; /* Skrito privzeto */
+  display: none;
+  /* Skrito privzeto */
   position: fixed;
   z-index: 1;
   left: 0;
@@ -276,7 +281,7 @@ button#modalDelete {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -289,62 +294,62 @@ button#modalDelete {
 
 /* Stili za Toggle Switch */
 .switch {
-position: relative;
-display: inline-block;
-width: 60px;
-height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-.switch input { 
-opacity: 0;
-width: 0;
-height: 0;
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
-position: absolute;
-cursor: pointer;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #ccc;
--webkit-transition: .4s;
-transition: .4s;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .slider:before {
-position: absolute;
-content: "";
-height: 26px;
-width: 26px;
-left: 4px;
-bottom: 4px;
-background-color: white;
--webkit-transition: .4s;
-transition: .4s;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-input:checked + .slider {
-background-color: #2196F3;
+input:checked+.slider {
+  background-color: #2196F3;
 }
 
-input:focus + .slider {
-box-shadow: 0 0 1px #2196F3;
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
--webkit-transform: translateX(26px);
--ms-transform: translateX(26px);
-transform: translateX(26px);
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 .slider.round {
-border-radius: 34px;
+  border-radius: 34px;
 }
 
 .slider.round:before {
-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .category-column {
