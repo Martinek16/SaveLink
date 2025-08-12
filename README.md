@@ -1,5 +1,7 @@
 <h1 align="center">SaveLink</h1>
 
+
+
 <p align="center">
   <strong>Download SaveLink from your browser's extension store:</strong>
 </p>
@@ -15,6 +17,8 @@
     <img src="https://img.shields.io/badge/Firefox-Coming%20Soon-orange?logo=firefox-browser&style=for-the-badge" alt="Firefox Extension">
   </a>
 </p>
+
+![SaveLink](img/screenshot.png)
 
 ---
 <p align="center">
