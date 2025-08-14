@@ -3,13 +3,13 @@
 <p align="center"><strong>Private, fast, and powerful link manager — built for scale.</strong></p>
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/EXTENSION_ID">
+  <a href="https://chromewebstore.google.com/detail/savelink/cdoikighlablcmgcmbmplbmpipoliddb?authuser=0&hl=sl">
     <img src="https://img.shields.io/badge/Chrome-Available-brightgreen?logo=google-chrome&style=for-the-badge" alt="Chrome Extension">
   </a>
-  <a href="https://microsoftedge.microsoft.com/addons/detail/EXTENSION_ID">
+  <a href="https://microsoftedge.microsoft.com/addons/detail/savelink/ppbeaafobmcbpkcmbmcfkhhdohpkaloe">
     <img src="https://img.shields.io/badge/Edge-Available-brightgreen?logo=microsoft-edge&style=for-the-badge" alt="Edge Extension">
   </a>
-  <a href="https://addons.mozilla.org/en-US/firefox/">
+  <a href="">
     <img src="https://img.shields.io/badge/Firefox-Coming%20Soon-orange?logo=firefox-browser&style=for-the-badge" alt="Firefox Extension">
   </a>
   <br/>
@@ -98,18 +98,6 @@
 ---
 
 ## 📦 Install
-
-<p align="center">
-  <a href="https://chromewebstore.google.com/detail/EXTENSION_ID">
-    <img src="https://img.shields.io/badge/Chrome-Web%20Store-brightgreen?logo=google-chrome&style=for-the-badge" alt="Chrome Web Store" />
-  </a>
-  <a href="https://microsoftedge.microsoft.com/addons/detail/EXTENSION_ID">
-    <img src="https://img.shields.io/badge/Edge-Add--ons-brightgreen?logo=microsoft-edge&style=for-the-badge" alt="Edge Add-ons" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/badge/Firefox-Coming%20Soon-orange?logo=firefox-browser&style=for-the-badge" alt="Firefox Coming Soon" />
-  </a>
-</p>
 
 Quick start:
 1) Install from your store above.
