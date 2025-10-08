@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/Firefox-Coming%20Soon-orange?logo=firefox-browser&style=for-the-badge" alt="Firefox Extension">
   </a>
   <br/>
-  <small>All data stays <strong>local-first</strong> in your browser. No accounts. No tracking.</small>
+  <small>All data stays <strong>local</strong> in your browser. No accounts. No tracking.</small>
   
 </p>
 
