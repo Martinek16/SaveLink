@@ -3,10 +3,10 @@
 <p align="center"><strong>Private, fast, and powerful link manager — built for scale.</strong></p>
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/EXTENSION_ID">
+  <a href="https://chromewebstore.google.com/detail/cdoikighlablcmgcmbmplbmpipoliddb?utm_source=item-share-cb">
     <img src="https://img.shields.io/badge/Chrome-Available-brightgreen?logo=google-chrome&style=for-the-badge" alt="Chrome Extension">
   </a>
-  <a href="https://microsoftedge.microsoft.com/addons/detail/EXTENSION_ID">
+  <a href="https://microsoftedge.microsoft.com/addons/detail/savelink/ppbeaafobmcbpkcmbmcfkhhdohpkaloe">
     <img src="https://img.shields.io/badge/Edge-Available-brightgreen?logo=microsoft-edge&style=for-the-badge" alt="Edge Extension">
   </a>
   <a href="https://addons.mozilla.org/en-US/firefox/">
@@ -17,7 +17,7 @@
   
 </p>
 
-![SaveLink](data/screenshot.png)
+![SaveLink](img/screenshot.png)
 
 ---
 
@@ -148,7 +148,6 @@ Quick start:
 ## 📞 Support
 
 - Email: savelink.info@gmail.com
-- Issues: https://github.com/Martinek16/SaveLink/issues
 
 ## 🔏 Privacy
 
