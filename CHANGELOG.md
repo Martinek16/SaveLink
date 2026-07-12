@@ -2,6 +2,30 @@
 
 All notable changes to this project are documented in this file. All core functionality is documented in the [README](./README.md), which is updated alongside new releases.
 
+## [1.2.1] – July 2026
+### Changed
+- Simpler category input in the popup: type a few letters and press Tab to cycle through matches.
+- Opening an already-saved page now shows its saved details and Save updates the link.
+
+### Fixed
+- Editing a category or group now correctly updates the saved link.
+- Empty groups you create are no longer removed automatically.
+- Cleaner layout for groups and the categories inside them.
+
+
+## [1.2.0] – June 2026
+### Added
+- Smart Assist: when you save a link, it suggests a clean title, category, tags, and a short note for you.
+- It learns from your existing categories and tags, so suggestions match how you already organize.
+- All of this runs on your device using Chrome's built-in AI. Nothing is sent anywhere.
+- New settings to turn each suggestion on or off.
+
+### Note
+- Smart Assist only works in Google Chrome, which has the built-in AI it needs. In other browsers the feature is hidden.
+
+### Fixed
+- Smaller, tidier cards and a few layout fixes.
+
 
 ## [1.1.0] – December 2025
 ### Added
@@ -35,5 +59,4 @@ All notable changes to this project are documented in this file. All core functi
 - Fixed link search
 
 
-## [1.0.0] – August 2025
-### First release
+## [FIRST RELESE] – August 2025
