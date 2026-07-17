@@ -64,7 +64,7 @@
 
 ## Privacy
 
-Your data stays in your browser — no cloud, no analytics, no tracking. See `data/PRIVACY.md`.
+Your data stays in your browser — no cloud, no analytics, no tracking. See [PRIVACY.md](./PRIVACY.md).
 
 ## Support
 
