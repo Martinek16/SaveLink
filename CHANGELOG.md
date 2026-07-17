@@ -2,6 +2,19 @@
 
 All notable changes to this project are documented in this file. All core functionality is documented in the [README](./README.md), which is updated alongside new releases.
 
+## [1.3.0] – July 2026
+### Added
+- Custom theme: choose your own colors for the background, text, and buttons to make SaveLink look the way you like.
+- Category menu: open the menu on any category to rename it, give it a color, reorder its links, or change how many links it shows.
+
+### Changed
+- Tidier Organize page: the header now matches the rest of Settings.
+- Adding a category opens the same screen as editing one, so you can set its group and color right away.
+
+### Fixed
+- Refreshing the main page no longer makes the cards flicker or jump.
+
+
 ## [1.2.1] – July 2026
 ### Changed
 - Simpler category input in the popup: type a few letters and press Tab to cycle through matches.
