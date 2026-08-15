@@ -19,10 +19,10 @@ SaveLink does not use any tracking technologies, cookies, or analytics tools, an
 
 The extension requests the following permissions:
 
-- **Storage:** Save your links, settings, and backups locally.
+- **Storage & unlimited storage:** Save your links, settings, and backups locally, without the small default size limit.
 - **Active Tab & Tabs:** Read the current page's URL and title when you save it, save all open tabs, and open SaveLink in a tab.
 - **Scripting & website access (all sites):** Save the page or link you are on, and check whether a saved link is still reachable.
-- **Bookmarks:** Read your browser bookmarks so you can import or get suggestions from them.
+- **Bookmarks:** Check whether SaveLink itself is bookmarked and, if you accept the prompt, add it to your bookmarks bar. Your other bookmarks are never read or changed.
 - **Context Menus:** Add a right-click option to save the current page.
 - **Notifications:** Show confirmation messages.
 
@@ -30,9 +30,9 @@ The extension requests the following permissions:
 
 Network requests are limited to actions you start: checking whether a link is reachable, and loading website icons (favicons) from Google's favicon service over HTTPS. No page contents are sent to any server.
 
-## Smart Assist (Chrome only)
+## Smart Assist
 
-When enabled, Smart Assist suggests titles, categories, tags, and notes using Chrome's built-in, on-device AI. Everything runs locally on your device and nothing is sent to any server. This feature is only available in Google Chrome and is hidden in other browsers.
+When enabled, Smart Assist suggests titles, categories, tags, and notes. It first uses local rules learned from the links you already saved, and then refines that suggestion with the browser's built-in, on-device AI (the Prompt API) on browsers that provide it — Chrome with built-in AI, or Edge Canary/Dev with the Prompt API flag enabled. Both steps run entirely on your device and nothing is sent to any server.
 
 ## Data Security
 
@@ -46,4 +46,4 @@ This privacy policy may be updated from time to time. Any changes will be reflec
 
 Questions? Contact: savelink.info@gmail.com
 
-Last updated: July 2026
+Last updated: August 2026
