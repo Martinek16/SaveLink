@@ -2,6 +2,28 @@
 
 All notable changes to this project are documented in this file. All core functionality is documented in the [README](./README.md), which is updated alongside new releases.
 
+## [1.3.1] – August 2026
+### Added
+- The sidebar now peeks out at the left edge with a small tab; click anywhere on it to open.
+
+### Changed
+- Links now open in their own screen in Settings, just like categories
+- The sidebar opens over the top bar and reads as one surface with it, and its list is easier to scan: groups stand out from the categories inside them, long names are shortened instead of pushing the count away, and a long group scrolls on its own.
+- Cleaner top bar: the search icon was redrawn and the sidebar button moved to the tab at the edge.
+- About was rewritten to explain what SaveLink does, and the privacy page now describes the permissions correctly.
+- Category cards have squarer top corners, and the tag, category and link screens follow the same spacing as the rest of Settings.
+- Suggestions in the popup now work in every browser: they are built from the links you already saved, and browsers with built-in AI simply refine them further.
+- When a save does not go through, the popup now says why instead of showing the same message for every problem.
+
+### Fixed
+- The top favorite card no longer shrinks when you close Settings
+- Favorited categories no longer move to General by themselves
+- You can type a space in a group name in the popup again
+- Categories you collapsed stay collapsed when a new link is saved
+- The switch for searching web addresses works again
+- Saving a page you already saved keeps its original save date
+
+
 ## [1.3.0] – July 2026
 ### Added
 - Custom theme: choose your own colors for the background, text, and buttons to make SaveLink look the way you like.
@@ -72,4 +94,4 @@ All notable changes to this project are documented in this file. All core functi
 - Fixed link search
 
 
-## [FIRST RELESE] – August 2025
+## [FIRST RELEASE] – August 2025
