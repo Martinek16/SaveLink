@@ -30,14 +30,14 @@
 - Grid layout that stays fast with thousands of links
 
 **Find**
-- Search by title, address, notes, category, group, or tag (`Ctrl+F`)
+- Search by title, address, notes, category, group, or tag (`Alt+Shift+Q`)
 - Live suggestions and highlighted matches
 
 **Save**
 - Right-click a page or link, or use the popup to edit title, category, notes, and tags
-- Shortcuts: save page (`Ctrl+Shift+S`), save all tabs (`Ctrl+Shift+A`), open SaveLink (`Ctrl+Shift+L`)
+- Shortcuts: save page (`Ctrl+Shift+S`), save all tabs (`Ctrl+Shift+Z`), open SaveLink (`Ctrl+Shift+X`)
 - Icon turns green when the page is already saved
-- Optional on-device suggestions for title, category, and tags (Chrome)
+- On-device suggestions for title, category, tags, and notes, learned from your own library; sharper still on browsers with the built-in AI Prompt API
 
 **Import & export**
 - Preview and pick items on import; duplicates are detected
@@ -57,7 +57,7 @@
 ## Install
 
 1. Install from the Chrome or Edge store above.
-2. Press `Ctrl+Shift+S` to save the current page, or `Ctrl+Shift+A` for all tabs.
+2. Press `Ctrl+Shift+S` to save the current page, or `Ctrl+Shift+Z` for all tabs.
 3. Open SaveLink to organize, search, and back up.
 
 ---
